@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Calculator"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#673AB7"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:text="Result will appear here"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/firstnum_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:backgroundTint="#FFFBFB"
+            android:ems="10"
+            android:hint="Enter first number"
+            android:inputType="numberDecimal"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/secondnum_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:backgroundTint="#FFFBFB"
+            android:ems="10"
+            android:hint="Enter second number"
+            android:inputType="numberDecimal"
+            android:padding="20dp" />
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Add"
+                android:onClick="add"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/subtractBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Subtract"
+                android:onClick="subtract"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/multiplyBtn"
+                android:layout_width="83dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Multiply"
+                android:onClick="multiply"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/divideBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Divide"
+                android:onClick="divide"
+                app:cornerRadius="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/devcredits_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="Created by Shayne McNeil"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</LinearLayout>
