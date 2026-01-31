@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,10 +20,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView resultWindow;
     private EditText firstNum;
     private EditText secondNum;
-    private Button addBtn;
-    private Button subtractBtn;
-    private Button multiplyBtn;
-    private Button divideBtn;
+    private ImageView addBtn;
+    private ImageView subtractBtn;
+    private ImageView multiplyBtn;
+    private ImageView divideBtn;
     private double num1;
     private double num2;
     private double result;
@@ -42,10 +43,10 @@ public class MainActivity extends AppCompatActivity {
         resultWindow = (TextView) findViewById(R.id.result_text);
         firstNum = (EditText) findViewById(R.id.firstnum_edit);
         secondNum = (EditText) findViewById(R.id.secondnum_edit);
-        addBtn = (Button) findViewById(R.id.addBtn);
-        subtractBtn = (Button) findViewById(R.id.subtractBtn);
-        multiplyBtn = (Button) findViewById(R.id.multiplyBtn);
-        divideBtn = (Button) findViewById(R.id.divideBtn);
+        addBtn = (ImageView) findViewById(R.id.addBtn);
+        subtractBtn = (ImageView) findViewById(R.id.subtractBtn);
+        multiplyBtn = (ImageView) findViewById(R.id.multiplyBtn);
+        divideBtn = (ImageView) findViewById(R.id.divideBtn);
     }
 
     public void getNums() {
