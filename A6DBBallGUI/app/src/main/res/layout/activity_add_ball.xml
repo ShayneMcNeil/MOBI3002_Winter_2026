@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editBallName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ball Name" />
+
+    <EditText
+        android:id="@+id/editX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="X Coordinate" />
+
+    <EditText
+        android:id="@+id/editY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Y Coordinate" />
+
+    <EditText
+        android:id="@+id/editDx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dX (horizontal speed)" />
+
+    <EditText
+        android:id="@+id/editDy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="dY (vertical speed)" />
+
+    <EditText
+        android:id="@+id/editColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Color (e.g., #FF0000)" />
+
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Enter" />
+
+</LinearLayout>
